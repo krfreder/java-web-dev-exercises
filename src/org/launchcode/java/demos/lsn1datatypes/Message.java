@@ -1,7 +1,7 @@
 package org.launchcode.java.demos.lsn1datatypes;
 
 public class Message {
-
+//    public static returnedDataType methodName(parameterDataType parameterName)
     public static String getMessage(String lang) {
 
         if (lang.equals("sp")) {
