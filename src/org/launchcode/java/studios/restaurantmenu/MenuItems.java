@@ -1,16 +1,39 @@
 package org.launchcode.java.studios.restaurantmenu;
 
+
+import org.launchcode.java.studios.restaurantmenu.Category;
+import org.launchcode.java.studios.restaurantmenu.FoodItem;
+
+import java.util.ArrayList;
+
 public class MenuItems {
 //    defaults to private, no need to actually type out
+    private String name;
     private float cost;
     private String description;
     private Boolean isNew;
     private Category category;
+    private ArrayList<FoodItem> ingredients;
 
-    public MenuItems (float aCost, String aDescription, boolean aIsNew, Category aCategory) {
-        this.cost = aCost;
+    public MenuItems (String aName, String aDescription, float aCost, Category aCategory) {
+        this.name = aName;
         this.description = aDescription;
-        this.isNew = aIsNew;
+        this.cost = aCost;
+        this.isNew = true;
         this.category = aCategory;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public float getCost() {
+        return cost;
+    }
+
+    public String getName() { return name; }
+
+    public String getIsNew() { return isNew.toString(); }
+
+    public Category getCategory() { return category; }
 }

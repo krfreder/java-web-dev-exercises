@@ -30,13 +30,25 @@ public class Student {
 
 
      //TODO: Uncomment and complete the getGradeLevel method here:
-//    public String getGradeLevel() {
+    public String getGradeLevel() {
+        if (this.numberOfCredits < 29) {
+            return "Freshman";
+        } else if (this.numberOfCredits > 29 && this.numberOfCredits < 60) {
+            return "Sophomore";
+        } else if (this.numberOfCredits > 59 && this.numberOfCredits < 90) {
+            return "Junior";
+        } else {
+            return "Senior";
+        }
+    }
 //        // Determine the grade level of the student based on numberOfCredits
 //    }
 
     // TODO: Complete the addGrade method.
     public void addGrade(int courseCredits, double grade) {
         // Update the appropriate fields: numberOfCredits, gpa
+        
+        private double calculateGpa =
     }
 
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
