@@ -20,13 +20,13 @@ public class Receipt {
 
     public void printReceipt(){
 
-        System.out.println("Order #"+orderNumber);
+        System.out.println("Order # "+orderNumber);
 
         for (MenuItems orderItem: orderItems) {
             System.out.println(orderItem.getName() + " $"+ orderItem.getCost());
         }
 
-        System.out.println("Grand total:" + total);
+        System.out.println("Grand total: $" + total);
     }
 
     public double getTotal(){
